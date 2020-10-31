@@ -1,6 +1,6 @@
 # vue-jobs-graphql
 
-One to two paragraph statement about your product and what it does.
+With this application, you can easily browse through the graphql related programming jobs. Job offers come from [graphql jobs api](https://graphql.jobs/).
 
 
 jobs list            |  job details
@@ -12,10 +12,6 @@ jobs list            |  job details
  * [Vue.js](https://vuejs.org/)
  * [Vue Apollo](https://apollo.vuejs.org/)
  * [AT-UI](https://at-ui.github.io/at-ui/#/en)
-
-## Features
-
-       todo
 
 ## Project setup
 ```
