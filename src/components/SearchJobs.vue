@@ -1,5 +1,6 @@
 <template>
-  <at-input placeholder="Please input" append-button size="large" :value="searchQuery" @keyup.native="emitQuery" class="search-input">
+  <at-input placeholder="Please input" append-button size="large" :value="searchQuery" @keyup.native="emitQuery"
+            class="search-input">
     <template slot="append">
       <i class="icon icon-search"></i>
     </template>
@@ -17,7 +18,6 @@ export default {
   },
   methods: {
     emitQuery(e) {
-      console.log(e)
       this.$emit('update:searchQuery', e.target.value)
     }
   }

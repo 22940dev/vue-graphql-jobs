@@ -1,15 +1,15 @@
 <template>
-      <at-card :no-hover="true" :bordered="false">
-        <div class="row at-row flex-center">
-        <img v-if="companyLogo" :src="companyLogo" style="width: 100%; height: auto;" class="col-8"/>
-        <div class="col-24 col-sm-16">
-          <h3 class="job_title">{{ jobName }}</h3>
-          <h4 class="company-name">{{ company.name }}</h4>
-          <JobLocations :locations="locations"/>
-          <JobTags :tags="tags" class="tags"/>
-        </div>
-        </div>
-      </at-card>
+  <at-card :no-hover="true" :bordered="false">
+    <div class="flex row at-row flex-center">
+      <img v-if="companyLogo" :src="companyLogo" style="width: 100%; height: auto;" class="col-8"/>
+      <div class="col-24 col-sm-16">
+        <h3 class="job_title">{{ jobName }}</h3>
+        <h4 class="company-name">{{ company.name }}</h4>
+        <JobLocations :locations="locations"/>
+        <JobTags :tags="tags" class="tags"/>
+      </div>
+    </div>
+  </at-card>
 </template>
 
 <script>

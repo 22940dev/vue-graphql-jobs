@@ -1,11 +1,12 @@
 export const getCompanyLogo = companyLogo => {
-    return companyLogo ? companyLogo : require( `../assets/no_logo.png`)
+    return companyLogo ? companyLogo : require(`../assets/no_logo.png`)
 }
 
-export const sortJobs = jobs => {
-    return jobs.sort(function(a, b) {
-        return (a.postedAt < b.postedAt) ? 1 : ((a.postedAt > b.postedAt) ? 1 : 0);
-    });
+export const sortJobs = (jobs, sortByNewest) => {
+    return sortByNewest ?
+        jobs.sort((a, b) => (a.postedAt < b.postedAt) ? 1 : ((a.postedAt > b.postedAt) ? 1 : 0))
+        :
+        jobs.sort((a, b) => (a.postedAt < b.postedAt) ? -1 : ((a.postedAt > b.postedAt) ? 1 : 0))
 }
 
 export const getPostedAt = postedAt => {

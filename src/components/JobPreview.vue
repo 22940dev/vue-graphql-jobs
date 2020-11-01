@@ -7,7 +7,7 @@
       <div class="col-12">
         <p class="job-preview__company-name">{{ job.company.name }}</p>
         <JobLocations :locations="job.cities"/>
-        <p>{{postedAt}}</p>
+        <p>{{ postedAt }}</p>
       </div>
     </div>
     <div class="row at-row">

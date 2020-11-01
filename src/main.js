@@ -14,7 +14,7 @@ Vue.use(AtComponents)
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  apolloProvider,
-  render: h => h(App)
+    router,
+    apolloProvider,
+    render: h => h(App)
 }).$mount('#app')
