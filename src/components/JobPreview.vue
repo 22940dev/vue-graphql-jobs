@@ -58,6 +58,7 @@ export default {
 
 <style scoped>
 .job-preview {
+  width: 100%;
   margin-top: var(--s1);
 }
 

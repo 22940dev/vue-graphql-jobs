@@ -4,7 +4,9 @@
       <div class="col-8 col-offset-1">
         <at-button icon="icon-chevrons-left" circle @click.native="backToJobsList"
                    v-if="isBackToJobsListPossible"></at-button>
-        <at-button icon="icon-github" circle v-else></at-button>
+        <a href="https://github.com/MateuszKawka/vue-graphql-jobs" target="_blank" v-else>
+          <i class="icon icon-github"></i>
+        </a>
       </div>
       <div class="col-14  col-offset-1 flex-end"><h1>Vue graphql jobs</h1></div>
     </header>

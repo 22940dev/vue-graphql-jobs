@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row at-row">
-      <div class="col-24 col-md-10 col-md-offset-1">
+      <div class="col-24 col-md-10 col-md-offset-2">
         <SearchJobs :searchQuery.sync="searchQuery"/>
       </div>
       <div class="col-24 col-md-10 col-md-offset-1 flex flex-center flex-middle">
@@ -10,7 +10,7 @@
     </div>
     <Spinner v-if="loading"/>
     <div class="row at-row" v-else-if="sortedJobs.length > 0 && !loading">
-      <div class="col-24 col-md-10 col-md-offset-1" v-for="job in sortedJobs" :key="job.id">
+      <div class="col-24 col-md-9 col-md-offset-2" v-for="job in sortedJobs" :key="job.id">
         <JobPreview :job="job"/>
       </div>
     </div>
