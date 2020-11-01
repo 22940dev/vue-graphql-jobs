@@ -33,6 +33,10 @@ export default {
   --primary-color: #6190E8;
 }
 
+.is-pointer {
+  cursor: pointer;
+}
+
 .at-card__head {
   line-height: normal !important;
   height: auto !important;

@@ -1,16 +1,17 @@
 <template>
-  <at-card :bordered="true" @click.native="goToJob" class="job-preview">
+  <at-card :bordered="true" @click.native="goToJob" class="job-preview is-pointer">
     <div class="row at-row flex-wrap">
-      <div class="col is-12">
+      <div class="col-12">
         <img :src="companyLogo" style="width: 92px; height: auto;"/>
       </div>
-      <div class="col is-12"><p class="job-preview__company-name">{{ job.company.name }}</p>
+      <div class="col-12">
+        <p class="job-preview__company-name">{{ job.company.name }}</p>
         <JobLocations :locations="job.cities"/>
         <p>{{postedAt}}</p>
       </div>
     </div>
     <div class="row at-row">
-      <div class="col is-24">
+      <div class="col-24">
         <JobTags :tags="job.tags"/>
       </div>
     </div>

@@ -1,10 +1,14 @@
 <template>
-  <header class="header">
-    <at-button icon="icon-chevrons-left" circle @click.native="backToJobsList"
-               v-if="isBackToJobsListPossible"></at-button>
-    <at-button icon="icon-github" circle v-else></at-button>
-    <h1>Vue graphql jobs</h1>
-  </header>
+  <div class="container container-fluid">
+    <header class="header row at-row">
+      <div class="col-8 col-offset-1">
+        <at-button icon="icon-chevrons-left" circle @click.native="backToJobsList"
+                   v-if="isBackToJobsListPossible"></at-button>
+        <at-button icon="icon-github" circle v-else></at-button>
+      </div>
+      <div class="col-14  col-offset-1 flex-end"><h1>Vue graphql jobs</h1></div>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -28,7 +32,6 @@ export default {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: fixed;
   left: 0;
