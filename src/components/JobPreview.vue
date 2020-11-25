@@ -1,5 +1,5 @@
 <template>
-  <at-card :bordered="true" @click.native="goToJob" class="job-preview is-pointer">
+  <at-card :bordered="true" @click.native="goToJob" class="job-preview is-pointer" v-if="job">
     <div class="row at-row flex-wrap">
       <div class="col-12">
         <img :src="companyLogo" style="width: 92px; height: auto;"/>
@@ -47,8 +47,7 @@ export default {
   methods: {
     goToJob() {
       this.$router.push(`job/${this.job.slug}/${this.job.company.slug}`)
-    },
-    getPostedAt
+    }
   },
   mounted() {
     this.companyLogo = getCompanyLogo(this.job.company.logoUrl)
